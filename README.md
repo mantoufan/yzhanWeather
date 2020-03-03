@@ -50,6 +50,6 @@
 ```
 ## 预览图
 电脑端：  
-![mtf-js-imglist 图片列表组件电脑端预览图](preview_pc.jpg)
+![mtf-js-imglist 图片列表组件电脑端预览图](https://mhjlw.github.io/mtf-js-imglist/preview_pc.jpg)
 移动端：  
-![mtf-js-imglist 图片列表组件移动端预览图](preview_mobile.jpg)
+![mtf-js-imglist 图片列表组件移动端预览图](https://mhjlw.github.io/mtf-js-imglist/preview_mobile.jpg)
