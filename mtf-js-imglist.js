@@ -61,7 +61,7 @@ var mtfJsImgList = (function() {
                 }
                 
                 img.onclick = function () {
-                    var a = $$('a'), top = this.offsetTop, left = this.offsetLeft, img = this.cloneNode(), cw = document.body.clientWidth / 2, ch = document.body.clientHeight / 3
+                    var a = $$('a'), top = this.offsetTop, left = this.offsetLeft, img = this.cloneNode(), cw = document.body.clientWidth / 2, ch = document.body.clientHeight / 2
                     if (isMobile) {
                         if (left > cw) {
                             list.scrollLeft = left - cw
@@ -101,7 +101,7 @@ var mtfJsImgList = (function() {
             $(opt.el).appendChild(container)
 
             list.style.cssText = 'height: 20vh; overflow: auto'
-            show.style.cssText = 'display: flex; height: 80vh; overflow: auto; align-items: center; justify-content: center; opacity: 1'
+            show.style.cssText = 'display: flex; height: 80vh; overflow: auto; align-items: center; justify-content: center; opacity: 1; background-color: #efefef'
 
             if (isMobile) {
                 list.style.height = '20vh'
