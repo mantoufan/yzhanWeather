@@ -1,4 +1,4 @@
-# mtfImgListbox 图片列表盒子
+# mtfPicListbox 图片列表盒子
 不同尺寸图片焦点图式切换，拼图式展示的原生JS插件。
 ## 需求
 - 同屏展示多张不同尺寸图片
@@ -12,7 +12,7 @@ https://mantoufan.github.io/mtfPicListbox/
 ### 获取
 - CDN
 ```
-<script type='text/javascript' src="https://cdn.dm126.com/all/m/mtfImgListbox.js"></script>
+<script type='text/javascript' src="https://cdn.dm126.com/all/m/mtf/mtfPicListbox/mtfPicListbox.js"></script>
 ```
 - 下载到本地
 https://github.com/mantoufan/mtfPicListbox/releases
