@@ -12,7 +12,7 @@ https://mantoufan.github.io/mtfPicListbox/
 ### 获取
 - CDN
 ```
-<script type='text/javascript' src="https://cdn.dm126.com/all/m/mtf/mtfPicListbox/mtfPicListbox.js"></script>
+<script type='text/javascript' src="https://cdn.dm126.com/all/m/mtf/mtfPicListbox/1.0.0/mtfPicListbox.js"></script>
 ```
 - 下载到本地
 https://github.com/mantoufan/mtfPicListbox/releases
