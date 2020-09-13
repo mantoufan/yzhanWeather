@@ -1,5 +1,5 @@
 # mtfImgListbox 图片列表盒子
-解决不同尺寸图片焦点图式切换，拼图式展示的原生JS插件。
+不同尺寸图片焦点图式切换，拼图式展示的原生JS插件。
 ## 需求
 - 同屏展示多张不同尺寸图片
 - 自动及手动切换
@@ -7,7 +7,7 @@
 ## 语言
 原生Javascript
 ## 演示
-https://mantoufan.github.io/mtfImgListbox/
+https://mantoufan.github.io/mtfPicListbox/
 ## 使用
 ### 获取
 - CDN
@@ -32,46 +32,30 @@ https://github.com/mantoufan/mtfPicListbox/releases
         datas : {
             pc : [ // 在电脑端显示
                 {
-                    href: 'https://pic.downk.cc/item/5f5dec49160a154a6792dc13.jpg',
-                    src: 'https://pic.downk.cc/item/5f5dec49160a154a6792dc13.jpg'
+                    href: '图片链接',
+                    src: '图片地址'
                 },
                 {
-                    href: 'https://pic.downk.cc/item/5f5dec49160a154a6792dc15.jpg',
-                    src: 'https://pic.downk.cc/item/5f5dec49160a154a6792dc15.jpg'
+                    href: '图片链接',
+                    src: '图片地址'
                 },
                 {
-                    href: 'https://pic.downk.cc/item/5f5dec49160a154a6792dc19.jpg',
-                    src: 'https://pic.downk.cc/item/5f5dec49160a154a6792dc19.jpg'
-                },
-                {
-                    href: 'https://pic.downk.cc/item/5f5dec49160a154a6792dc20.jpg',
-                    src: 'https://pic.downk.cc/item/5f5dec49160a154a6792dc20.jpg'
-                },
-                {
-                    href: 'https://pic.downk.cc/item/5f5dec49160a154a6792dc27.jpg',
-                    src: 'https://pic.downk.cc/item/5f5dec49160a154a6792dc27.jpg'
+                    href: '图片链接',
+                    src: '图片地址'
                 }
             ],
             mobile: [ // 在移动端显示
                 {
-                    href: 'https://pic.downk.cc/item/5f5deca7160a154a6792f7f3.jpg',
-                    src: 'https://pic.downk.cc/item/5f5deca7160a154a6792f7f3.jpg'
+                    href: '图片链接',
+                    src: '图片地址'
                 },
                 {
-                    href: 'https://pic.downk.cc/item/5f5deca7160a154a6792f7f8.jpg',
-                    src: 'https://pic.downk.cc/item/5f5deca7160a154a6792f7f8.jpg'
+                    href: '图片链接',
+                    src: '图片地址'
                 },
                 {
-                    href: 'https://pic.downk.cc/item/5f5deca7160a154a6792f7fb.jpg',
-                    src: 'https://pic.downk.cc/item/5f5deca7160a154a6792f7fb.jpg'
-                },
-                {
-                    href: 'https://pic.downk.cc/item/5f5deca7160a154a6792f7ff.jpg',
-                    src: 'https://pic.downk.cc/item/5f5deca7160a154a6792f7ff.jpg'
-                },
-                {
-                    href: 'https://pic.downk.cc/item/5f5deca7160a154a6792f809.jpg',
-                    src: 'https://pic.downk.cc/item/5f5deca7160a154a6792f809.jpg'
+                    href: '图片链接',
+                    src: '图片地址'
                 }
             ]
         }
