@@ -22,11 +22,11 @@ https://github.com/mantoufan/mtfPicListbox/releases
 <div id="js_box"></div>
 <!-- 放置图片列表的位置：结束 -->
 <!-- 引入Js：开始 -->
-<script type='text/javascript' src="/mtfImgListbox.js"></script>
+<script type='text/javascript' src="./mtfPicListbox.js"></script>
 <!-- 引入Js：结束 -->
 <!-- 初始化配置：开始 -->
 <script>
-    mtfJsImgList.init({
+    mtfPicListbox.init({
         el: 'js_box', // 放置图片列表的容器ID
         autoPlay: 3500, // 自动播放时间间隔，为0，不自动播放，点击任意图片，会停止自动播放
         datas : {
