@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YZhan Weather Demo</title>
+  <style>
+    .petal {
+      position: relative;
+      width: 100%;
+      top: -340px;
+      text-align: left;
+    }
+
+    .petal span {
+      display: inline-block;
+      overflow: hidden;
+      width: 5px;
+      height: 5px;
+      border-radius: 200px 10px 200px 200px;
+      background: linear-gradient(to bottom, #faaca8, #ddd6f3);
+      z-index: 1;
+      transform: skewX(30deg);
+      backface-visibility: visible;
+      animation: fallingSakura1 8s ease infinite;
+    }
+
+    .petal span:nth-of-type(3n+2) {
+      animation: fallingSakura2 8s ease infinite;
+    }
+
+    .petal span:nth-of-type(3n+1) {
+      animation: fallingSakura3 8s ease infinite;
+    }
+
+
+    .petal span:nth-of-type(n) {
+      animation-delay: -1.9s;
+    }
+
+    .petal span:nth-of-type(2n) {
+      animation-delay: 3.9s;
+    }
+
+    .petal span:nth-of-type(3n) {
+      animation-delay: 2.3s;
+    }
+
+    .petal span:nth-of-type(4n) {
+      animation-delay: 4.4s;
+    }
+
+    .petal span:nth-of-type(5n) {
+      animation-delay: 5s;
+    }
+
+    .petal span:nth-of-type(6n) {
+      animation-delay: 3.5s;
+    }
+
+    .petal span:nth-of-type(7n) {
+      animation-delay: 2.8s;
+    }
+
+    .petal span:nth-of-type(8n) {
+      animation-delay: 1.5s;
+    }
+
+    .petal span:nth-of-type(9n) {
+      animation-delay: 3.3s;
+    }
+
+    .petal span:nth-of-type(10n) {
+      animation-delay: 2.5s;
+    }
+
+    .petal span:nth-of-type(11n) {
+      animation-delay: 1.2s;
+    }
+
+    .petal span:nth-of-type(12n) {
+      animation-delay: 4.1s;
+    }
+
+    .petal span:nth-of-type(13n) {
+      animation-delay: 5.8s;
+    }
+
+    .petal span:nth-of-type(14n) {
+      animation-delay: -0.1s;
+    }
+
+    .petal span:nth-of-type(15n) {
+      animation-delay: 6.3s;
+    }
+
+    .petal span:nth-of-type(16n) {
+      animation-delay: -1s;
+    }
+
+    .petal span:nth-of-type(17n) {
+      animation-delay: 7.4s;
+    }
+
+    .petal span:nth-of-type(18n) {
+      animation-delay: -0.3s;
+    }
+
+    .petal span:nth-of-type(19n) {
+      animation-delay: 8.3s;
+    }
+
+    .petal span:nth-of-type(20n) {
+      animation-delay: -0.6s;
+    }
+
+    .petal span:nth-of-type(21n) {
+      animation-delay: 7.7s;
+    }
+
+    .petal span:nth-of-type(2n+2) {
+      background: linear-gradient(to right, #fffbd5, #F15F79);
+    }
+
+    .petal span:nth-of-type(3n+1) {
+      background: linear-gradient(to right, #DD5E89, #F7BB97);
+    }
+
+    .petal span:nth-of-type(3n+2) {
+      border-radius: 20px 1px;
+    }
+
+    .petal span:nth-of-type(3n+3) {
+      transform: rotateX(-180deg);
+    }
+
+    .petal span:nth-of-type(3n+2) {
+      animation-duration: 12sec;
+    }
+
+    .petal span:nth-of-type(4n+2) {
+      animation-duration: 9sec;
+    }
+
+    .petal span:nth-of-type(5n+2) {
+      width: 12px;
+      height: 12px;
+      box-shadow: 1.5px 1.5px 8px #fc7bd1;
+    }
+
+    .petal span:nth-of-type(4n+3) {
+      width: 10px;
+      height: 10px;
+      box-shadow: 1px 1px 6px #fc7bd1;
+    }
+
+    .petal span:nth-of-type(n) {
+      height: 23px;
+      width: 30px;
+    }
+
+    .petal span:nth-of-type(2n+1) {
+      height: 11px;
+      width: 16px;
+    }
+
+    .petal span:nth-of-type(3n+2) {
+      height: 17px;
+      width: 23px;
+    }
+
+    @keyframes fallingSakura1 {
+      0% {
+        transform:
+          translate3d(0, 0, 0) rotateX(0deg);
+        opacity: 1;
+      }
+
+      100% {
+        transform:
+          translate3d(400px, 1200px, 0px) rotateX(-290deg);
+        opacity: 0.3;
+      }
+    }
+
+    @keyframes fallingSakura2 {
+      0% {
+        transform:
+          translate3d(0, 0, 0) rotateX(-20deg);
+        opacity: 1;
+      }
+
+      100% {
+        transform:
+          translate3d(200px, 1200px, 0px) rotateX(-70deg);
+        opacity: 0.2;
+      }
+    }
+
+    @keyframes fallingSakura3 {
+      0% {
+        transform:
+          translate3d(0, 0, 0) rotateX(90deg);
+        opacity: 1;
+      }
+
+      100% {
+        transform:
+          translate3d(500px, 1200px, 0px) rotateX(290deg);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app"></div>
+  <script src="./yzhanweather.min.js"></script>
+  <script>
+    var yzhanweahter = new YZhanWeather();
+  </script>
+</body>
+
+</html>
