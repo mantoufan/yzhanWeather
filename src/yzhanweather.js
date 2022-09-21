@@ -43,21 +43,6 @@ export default class {
     this.clear()
     this.load(type)
   }
-  sakura() {
-    this.run('sakura')
-  }
-  snow() {
-    this.run('snow')
-  }
-  rain() {
-    this.run('rain')
-  }
-  light() {
-    this.run('light')
-  }
-  butterfly() {
-    this.run('butterfly')
-  }
   clear() {
     this.container.innerHTML = ''
     while (this.styleSheet.cssRules.length) this.styleSheet.deleteRule(0)

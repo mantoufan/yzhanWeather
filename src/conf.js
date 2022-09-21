@@ -55,6 +55,19 @@ const tpl = {
         opacity: .2;
       }`
     ]
+  },
+  snow: {
+    style: `
+      display: inline-block;
+      width: 1vw;
+      height: 1vw;
+      margin: 0 2vw;
+      border-radius: 50%;
+      background-color: white;
+      border: 1px solid #ccc;
+      transform: translate(0, -100%);
+      animation: {keyframes0} 6s ease-in-out infinite;
+    `,
   }
 }
 export default {
@@ -75,14 +88,20 @@ export default {
   },
   snow: {
     num: 20,
+    style: tpl.snow.style,
+    styles: tpl.fall.styles,
+    keyframes: tpl.fall.keyframes
+  },
+  rain: {
+    num: 40,
     style: `
       display: inline-block;
-      width: 1vw;
+      width: .2vw;
       height: 1vw;
-      margin: 0 2vw;
-      border-radius: 50%;
-      background-color: white;
-      border: 1px solid #ccc;
+      margin: 0 1vw;
+      border-radius: 30%;
+      background-color: #ddd;
+      border: .1vw solid #fff;
       box-sizing: border-box;
       transform: translate(0, -100%);
       animation: {keyframes0} 6s ease-in-out infinite;
@@ -90,21 +109,10 @@ export default {
     styles: tpl.fall.styles,
     keyframes: tpl.fall.keyframes
   },
-  rain: {
-    num: 20,
-    style: `
-      display: inline-block;
-      width: .5vw;
-      height: 1vw;
-      margin: 0 2vw;
-      border-radius: 50% 50% 0 0;
-      background-color: black;
-      border: 1px solid #ccc;
-      box-sizing: border-box;
-      transform: translate(0, -100%);
-      animation: {keyframes0} 6s ease-in-out infinite;
-    `,
+  light: {
+    num: 30,
+    style: tpl.snow.style.replace('white', '#fff06b').replace(/1/g, '.5').replace('2', '1.5'),
     styles: tpl.fall.styles,
     keyframes: tpl.fall.keyframes
-  }
+  },
 }
