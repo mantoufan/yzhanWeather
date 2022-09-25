@@ -10,11 +10,68 @@
     body {
       background-color: aquamarine;
     }
+
+    .butterfly {
+      position: relative;
+      width: 50px;
+    }
+
+    .butterfly::after {
+      position: absolute;
+      content: ' ';
+      background-color: green;
+      border-radius: 50%;
+      display: block;
+      left: 20px;
+      width: 10px;
+      height: 43px;
+    }
+
+    .butterfly .wing {
+      position: absolute;
+      width: 30px;
+      height: 45px;
+    }
+
+    .butterfly .wing:last-child {
+      right: 0;
+    }
+
+    .butterfly .wing:last-child::before {
+      right: 5px;
+      left: auto;
+    }
+
+    .butterfly .wing::before {
+      position: absolute;
+      left: 5px;
+      content: ' ';
+      background-color: red;
+      border-radius: 50%;
+      display: block;
+      width: 26px;
+      height: 26px;
+    }
+
+    .butterfly .wing::after {
+      position: absolute;
+      bottom: 0;
+      content: ' ';
+      background-color: red;
+      border-radius: 50%;
+      display: block;
+      width: 30px;
+      height: 30px;
+    }
   </style>
 </head>
 
 <body>
   <div id="app"></div>
+  <div class="butterfly">
+    <div class="wing"></div>
+    <div class="wing"></div>
+  </div>
   <script src="./yzhanweather.min.js"></script>
   <script>
     var yzhanweahter = new YZhanWeather()
