@@ -13,55 +13,66 @@
 
     .butterfly {
       position: relative;
-      width: 50px;
+      width: 5vw;
     }
 
     .butterfly::after {
       position: absolute;
       content: ' ';
-      background-color: green;
+      background-color: lightgoldenrodyellow;
       border-radius: 50%;
       display: block;
-      left: 20px;
-      width: 10px;
-      height: 43px;
+      left: 2vw;
+      width: 1vw;
+      height: 3vw;
     }
 
     .butterfly .wing {
       position: absolute;
-      width: 30px;
-      height: 45px;
+      width: 2.5vw;
+      height: 3vw;
+      animation: wing .3s infinite ease-in-out alternate;
     }
 
     .butterfly .wing:last-child {
       right: 0;
     }
 
-    .butterfly .wing:last-child::before {
-      right: 5px;
+    .butterfly .wing:last-child::after {
+      right: .5vw;
       left: auto;
     }
 
     .butterfly .wing::before {
       position: absolute;
-      left: 5px;
       content: ' ';
-      background-color: red;
-      border-radius: 50%;
       display: block;
-      width: 26px;
-      height: 26px;
+      width: 2.5vw;
+      height: 2.5vw;
+      background-color: lightyellow;
+      border-radius: 50%;
     }
 
     .butterfly .wing::after {
       position: absolute;
-      bottom: 0;
       content: ' ';
-      background-color: red;
-      border-radius: 50%;
       display: block;
-      width: 30px;
-      height: 30px;
+      top: 2vw;
+      left: .5vw;
+      width: 2vw;
+      height: 2vw;
+      background-color: lightyellow;
+      border-radius: 50%;
+    }
+
+    @keyframes wing {
+      from {
+        transform: scale(1);
+      }
+
+      to {
+        transform: scale(1.1);
+      }
     }
   </style>
 </head>
