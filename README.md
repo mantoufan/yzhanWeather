@@ -40,17 +40,17 @@ butterfly
  
 
 ## Performance comparsion
-We use a page from madfan including a 720P video background, introduce different version of this script and compare resources usage growth.  
-*Note: Data obtained when rendering 40 butterflies at the same time.*
-### Memory
-- Original Page
-- With JavaScript Version
+We use a page from madfan including a 720P video background, collect data when rendering 40 butterflies at the same time.
+- With Old Version  
+*Note: By GIF and JavaScript in **old** folder*
+![the result of old version](https://s2.loli.net/2023/02/26/tb4m3GvEHdhxCq2.jpg)
+
 - With Pure CSS Version
-### CPU
-- Original Page
-- With JavaScript Version
-- With Pure CSS Version
-### FPS
-- Original Page
-- With JavaScript Version
-- With Pure CSS Version
+![the result of new version](https://s2.loli.net/2023/02/26/v9dJaItjX1Z6Unh.jpg)
+
+No long tasks, almost negligible CPU and GPU usage
+
+## Todo
+All config including speed, num and css tpl are in `conf.js` under the *src* folder.  
+You could change it and then `npm run build` your own version.   
+In the futrue, we may allow users to set these parameters via additional options.  
