@@ -6,8 +6,7 @@
 ![ie11](https://img.shields.io/badge/IE-11-skyblue)  
 Pure CSS animation for sakura, rain, snow, firefly and butterfly effects, high performance without affecting SEO   
 纯 CSS 动画实现樱花、雨、雪、萤火虫和蝴蝶飞舞背景效果，高性能且不影响 SEO  
-## 1kB Series Lib
-Fully functional with gzip code 1kB+ and keep source code readable
+**1kB Series Lib** Fully functional with gzip code 1kB and keep source code readable
 ## Quick Start
 ### Setup
 #### Node.js
@@ -18,7 +17,7 @@ npm i yzhanweather
 ```html
 <script src="https://cdn.jsdelivr.net/npm/yzhanweather@latest/docs/yzhanweather.min.js"></script>
 ```
-### Use
+### Usage
 ```javascript 
 const yzhanweahter = new YZhanWeather()
 yzhanweahter.run('firefly') // Options: sakura | snow | firefly | rain | butterfly 

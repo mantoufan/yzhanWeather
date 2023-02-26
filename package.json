@@ -1,7 +1,7 @@
 {
   "name": "yzhanweather",
   "version": "1.0.0",
-  "description": "Pure CSS animation for cherry blossom, rain, snow, light and butterfly effects. 纯 CSS 动画实现樱花、雨、雪、光和蝴蝶效果。",
+  "description": "Pure CSS animation for sakura, rain, snow, firefly and butterfly effects, high performance without affecting SEO. 纯 CSS 动画实现樱花、雨、雪、萤火虫和蝴蝶飞舞背景效果，高性能且不影响 SEO",
   "main": "dist/index.js",
   "scripts": {
     "build": "webpack --mode production",
@@ -12,15 +12,17 @@
     "url": "git@mtf.github.com:mantoufan/yzhanWeather.git"
   },
   "keywords": [
-    "cherry",
+    "sakura",
     "rain",
     "snow",
-    "light",
+    "firefly",
     "butterfly",
     "pure",
     "css",
     "js",
-    "library"
+    "library",
+    "performance",
+    "SEO"
   ],
   "author": "shonwu",
   "license": "MIT",

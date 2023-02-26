@@ -168,7 +168,7 @@ export default {
     styles: tpl.fall.styles,
     keyframes: tpl.fall.keyframes
   },
-  light: {
+  firefly: {
     num: 60,
     containerStyle: tpl.container.style,
     style: tpl.snow.style.replace('white', '#fff06b'),
