@@ -4,7 +4,7 @@ module.exports = {
   entry: './src/yzhanweather.js',
   output: {
     filename: 'yzhanweather.min.js',
-    path: resolve('dist'),
+    path: resolve('docs'),
     library: 'YZhanWeather',
     libraryTarget: 'umd',
     libraryExport: 'default',
@@ -34,6 +34,6 @@ module.exports = {
     hot: true,
     open: true,
     port: 3000,
-    static: resolve('dist'),
+    static: resolve('docs'),
   }
 }

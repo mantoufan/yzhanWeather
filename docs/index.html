@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YZhan Weather Demo</title>
+</head>
+
+<body>
+  <div id="app">
+    <select>
+      <option value="bg/sakura.jpg">sakura</option>
+      <option value="bg/light.jpg">light</option>
+      <option value="bg/snow.jpg">snow</option>
+      <option value="bg/rain.jpg">rain</option>
+      <option value="bg/butterfly.jpg">butterfly
+      </option>
+    </select>
+  </div>
+  <script src="./yzhanweather.min.js"></script>
+  <script>
+    var yzhanweather = new YZhanWeather(),
+      sel = document.getElementsByTagName('select')[0]
+    function changeWallpaper() {
+      yzhanweather.run(this.options[this.selectedIndex].text)
+      document.body.style.cssText = 'background: rgba(0, 0, 0, 0) url(' + this.value + ') no-repeat scroll center top / cover'
+    }
+    sel.onchange = changeWallpaper
+    changeWallpaper.call(sel)
+  </script>
+</body>
+
+</html>
