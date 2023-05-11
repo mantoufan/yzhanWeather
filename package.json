@@ -1,8 +1,11 @@
 {
   "name": "yzhanweather",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Pure CSS animation for sakura, rain, snow, firefly and butterfly effects, high performance without affecting SEO. 纯 CSS 动画实现樱花、雨、雪、萤火虫和蝴蝶飞舞背景效果，高性能且不影响 SEO",
-  "main": "dist/index.js",
+  "main": "docs/yzhanweather.min.js",
+  "files": [
+    "docs/yzhanweather.min.js"
+  ],
   "scripts": {
     "build": "webpack --mode production",
     "dev": "webpack-dev-server"
@@ -32,5 +35,6 @@
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.11.0"
-  }
+  },
+  "dependencies": {}
 }
