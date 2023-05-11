@@ -32,7 +32,24 @@ export default class {
   createStyles(rules, nameFn, keyframeNames) {
     return this.createRules(rules, nameFn, rule => rule.replace(/\{keyframes(\d+)\}/g, (_, p) => keyframeNames[p]))
   }
-  load(type) {
+  processStyles(styles, fn) {
+    const n = styles.length
+    for (let i = 0; i < n; i++) {
+      const g = styles[i].match(/animation-duration:(?<duration>.*)/)
+      if (g === null) continue
+      fn(parseFloat(g.groups.duration), g.groups.duration, i)
+    }
+  }
+  replaceStyles(styles, config) {
+    let maxDuration = 0
+    this.processStyles(styles, duration => maxDuration < duration && (maxDuration = duration))
+    this.processStyles(styles, (duration, srcDuration, i) => {
+      const newDuration = (duration / maxDuration) * config.maxDuration
+      const dstDuration = srcDuration.replace(duration, newDuration)
+      styles[i] = styles[i].replace(srcDuration, dstDuration)
+    })
+  }
+  load(type, config) {
     let {num, html, containerStyle, style, styles, keyframe = {}, keyframes} = CONF[type]
     this.createKeyfarme(keyframe)
     const keyframeNames = this.createKeyfarmes(keyframes)
@@ -41,6 +58,7 @@ export default class {
     this.createStyles([containerStyle], _ => '.' + this.container.className, keyframeNames)
     delete style['']
     this.createRule(style, n => '.' + this.container.className + ' div' + (n[0] === ':' ? '' : ' ') + n)
+    this.replaceStyles(styles, config)
     const classNames = this.createStyles(styles, n => ' .' + this.container.className + ' .' + n, keyframeNames)
     const fragement = document.createDocumentFragment()
     for (let i = 0; i < num; i++) {
@@ -50,9 +68,9 @@ export default class {
     }
     this.container.appendChild(fragement)
   }
-  run(type) {
+  run(type, config = { maxDuration: 10 }) {
     this.clear()
-    this.load(type)
+    this.load(type, config)
   }
   clear() {
     this.container.innerHTML = ''

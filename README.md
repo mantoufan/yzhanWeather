@@ -21,6 +21,9 @@ npm i yzhanweather
 ```javascript 
 const yzhanweahter = new YZhanWeather()
 yzhanweahter.run('firefly') // Options: sakura | snow | firefly | rain | butterfly 
+yzhanweather.run('firefly', {
+  maxDuration: 10 // Default: 10s, this option can determine the speed of animations
+})
 ```
 ## Demo
 [Online Demo](https://mantoufan.github.io/yzhanWeather/)  
@@ -50,7 +53,7 @@ We use a page from madfan including a 720P video background, collect data when r
 
 No long tasks, almost negligible CPU and GPU usage
 
-## Todo
+## Config
 All config including speed, num and css tpl are in `conf.js` under the *src* folder.  
 You could change it and then `npm run build` your own version.   
-In the futrue, we may allow users to set these parameters via additional options.  
+You can set `maxDuration` to control the speed of animations without changing the `conf.js`
