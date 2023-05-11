@@ -19,11 +19,13 @@ npm i yzhanweather
 ```
 ### Usage
 ```javascript 
-const yzhanweahter = new YZhanWeather()
-yzhanweahter.run('firefly') // Options: sakura | snow | firefly | rain | butterfly 
+const yzhanweather = new YZhanWeather()
+yzhanweather.run('firefly') // Options: sakura | snow | firefly | rain | butterfly 
 yzhanweather.run('firefly', {
   maxDuration: 10 // Default: 10s, this option can determine the speed of animations
 })
+yzhanweather.clear() // Stop and clear all animations
+yzhanweather.destory() // Destory the instance and free up memory
 ```
 ## Demo
 [Online Demo](https://mantoufan.github.io/yzhanWeather/)  
