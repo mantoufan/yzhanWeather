@@ -12,6 +12,7 @@ Pure CSS animation for sakura, rain, snow, firefly and butterfly effects, high p
 #### Node.js
 ```javascript
 npm i yzhanweather
+import YZhanWeather from 'yzhanweather'
 ```
 #### Browser
 ```html

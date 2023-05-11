@@ -53,10 +53,9 @@ export default class {
     let {num, html, containerStyle, style, styles, keyframe = {}, keyframes} = CONF[type]
     this.createKeyfarme(keyframe)
     const keyframeNames = this.createKeyfarmes(keyframes)
-    if (typeof style === 'string') style = { '': style }
+    if (typeof style === 'string') style = { '': style }  
     this.createStyles([style['']], n => '.' + (this.container.className = n) + ' div', keyframeNames)
     this.createStyles([containerStyle], _ => '.' + this.container.className, keyframeNames)
-    delete style['']
     this.createRule(style, n => '.' + this.container.className + ' div' + (n[0] === ':' ? '' : ' ') + n)
     this.replaceStyles(styles, config)
     const classNames = this.createStyles(styles, n => ' .' + this.container.className + ' .' + n, keyframeNames)
